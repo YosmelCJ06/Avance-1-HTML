@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="es">
+    <head>
+        <title>MovilToon - Proceso de Compra</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- ENCABEZADO Y MENÚ FIJO (Igual que en el index) -->
+        <div class="header-principal">
+            <header>
+                <h1>MovilToon</h1>
+                <p>La tienda definitiva de tecnología móvil</p>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#productos">Productos</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="index.html#registro">Registro</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- CUERPO / FORMULARIO DE COMPRA -->
+        <section>
+            <h2>Finalizar Compra</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Formulario de Datos de Envío y Pago</legend>
+                    
+                    <label for="nombre">Nombre Completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="cel">Celular:</label><br>
+                    <input type="text" id="cel" name="cel" required><br><br>
+
+                    <label for="pago">Método de Pago:</label><br>
+                    <select id="pago" name="pago">
+                        <option value="">Seleccione...</option>
+                        <option value="tarjeta">Tarjeta de Crédito / Débito</option>
+                        <option value="yape">Yape / Plin</option>
+                        <option value="efectivo">Pago contra entrega</option>
+                    </select><br><br>
+
+                    <label for="comentarios">Dirección exacta de entrega y referencias:</label><br>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="30"></textarea><br><br>
+
+                    <button type="submit">Confirmar Compra</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- PIE DE PÁGINA -->
+    <footer>
+    <!-- Columna 1: Logo y marca -->
+    <div class="column-logo">
+        <img src="recursos/png-transparent-young-golden-retriever-dog-with-a-playful-expression-sitting-thumbnail_1.png" alt="MOVILTOON" width="150">
+    </div>
+   
+
+    <!-- Columna 2: Servicio al cliente -->
+    <div class="column">
+        <p>SERVICIO AL CLIENTE</p>
+        <ul>
+            <li><a href="#">Políticas de seguridad y privacidad de datos</a></li>
+            <li><a href="#">Política de garantía</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Libro de reclamaciones</a></li>
+        </ul>
+        <div class="libro-reclamaciones">
+            <img src="recursos/libro_reclamaciones.png" alt="Libro de Reclamaciones" width="120">
+        </div>
+    </div>
+
+    <!-- Columna 3: Contáctanos -->
+    <div class="column">
+        <p>CONTÁCTANOS</p>
+        <ul>
+            <li><strong>Dirección:</strong><br>Av. Garcilaso de la Vega 1358, Cercado de Lima. CC PlazaTec Tda 300 (2do piso).</li>
+            <li><strong>Horario de atención:</strong><br>Lunes a sábados: 11:30 am a 8 pm.<br>Domingos cerrado.</li>
+            <li><strong>Atención Ventas:</strong><br>+51 923 273 093</li>
+            <li><strong>Correo de contacto:</strong><br>ventas@zmgmoviles.com</li>
+        </ul>
+    </div>
+    </footer>
+</html>

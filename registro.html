@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="es">
+<head>
+    <title>MovilToon - Registro de Usuario</title>
+    <meta charset="UTF-8">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <!-- ENCABEZADO Y MENÚ FIJO -->
+    <div class="header-principal">
+        <header>
+            <h1>MovilToon</h1>
+            <p>La tienda definitiva de tecnología móvil</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="index.html#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- SECCIÓN FORMULARIO DE REGISTRO ESTRUCTURADO[cite: 1] -->
+    <section>
+        <h2>Crea tu cuenta en MovilToon</h2>
+        <!-- Formulario con método POST y página de destino para procesar datos[cite: 1] -->
+        <form action="maneja_formulario.php" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+                
+                Nombre <br/>
+                <input type="text" name="nombre" value="" required /><br/><br/>
+                
+                Apellidos <br/>
+                <input type="text" name="apellidos" value="" required /><br/><br/>
+                
+                DNI <br/>
+                <!-- Control de texto con tamaño visual y límite de caracteres[cite: 1] -->
+                <input type="text" name="dni" value="" size="10" maxlength="9" required /><br/><br/>
+
+                Correo electrónico <br/>
+                <input type="email" name="correo" value="" required /><br/><br/>
+
+                <button type="submit" class="btn-azul">Registrarme</button>
+            </fieldset>
+        </form>
+    </section>
+
+
+    <footer>
+        <!-- Columna 1: Logo y Marca -->
+        <div class="column-logo">
+            <h2>MovilToon</h2>
+            <p class="slogan-footer">La tienda definitiva de tecnología móvil en Lima Norte.</p>
+        </div>
+
+        <!-- Columna 2: Servicio al cliente -->
+        <div class="column">
+            <p>SERVICIO AL CLIENTE</p>
+            <ul>
+                <li><a href="#">Políticas de seguridad y privacidad de datos</a></li>
+                <li><a href="#">Política de garantía</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="reclamaciones.html">Libro de reclamaciones</a></li>
+            </ul>
+        </div>
+
+        <!-- Columna 3: Contáctanos -->
+        <div class="column">
+            <p>CONTÁCTANOS</p>
+            <ul>
+                <li><strong>Dirección:</strong><br>Av. Garcilaso de la Vega 1358, Lima Norte.</li>
+                <li><strong>Horario de atención:</strong><br>Lunes a sábados: 11:30 am a 8 pm.</li>
+                <li><strong>Atención Ventas:</strong><br>+51 960 505 452</li>
+                <li><strong>Correo de contacto:</strong><br>ventas@moviltoon.com</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+

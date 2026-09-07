@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>MovilToon - Libro de Reclamaciones</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="recursos/Captura de pantalla 2026-09-05 153316.png" type="image/x-icon">
+    </head>
+    <body>
+        <!-- ENCABEZADO Y MENÚ FIJO -->
+        <div class="header-principal">
+            <header>
+                <h1>MovilToon</h1>
+                <p>La tienda definitiva de tecnología móvil</p>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#productos">Productos</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="index.html#registro">Registro</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- SECCIÓN FORMULARIO DE RECLAMACIONES -->
+        <section>
+            <h2>Hoja de Reclamación</h2>
+            
+            <p>Conforme a lo establecido en el Código de Protección y Defensa del Consumidor este establecimiento cuenta con un Libro de Reclamaciones a su disposición.</p>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>1. Identificación del Consumidor Reclamante</legend>
+                    
+                    <label for="nombres">Nombres y Apellidos:</label><br>
+                    <input type="text" id="nombres" name="nombres" required><br><br>
+                    
+                    <label for="doc">Documento de Identidad (DNI / CE):</label><br>
+                    <input type="text" id="doc" name="doc" maxlength="8" required><br><br>
+                    
+                    <label for="correo">Correo Electrónico:</label><br>
+                    <input type="email" id="correo" name="correo" required><br><br>
+                    
+                    <label for="telefono">Teléfono / Celular:</label><br>
+                    <input type="text" id="telefono" name="telefono" required><br><br>
+                </fieldset>
+                
+                <br>
+
+                <fieldset>
+                    <legend>2. Detalle del Reclamo y Pedido</legend>
+                    <label for="detalle">Detalle del reclamo:</label><br>
+                    <textarea id="detalle" name="detalle" rows="5" cols="40" placeholder="Escriba aquí los motivos de su reclamo..."></textarea><br><br>
+
+                    <button type="submit">Enviar Reclamo</button>
+                    <button type="reset">Limpiar Campos</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- PIE DE PÁGINA -->
+        <footer>
+            <div class="column-logo">
+            <h2>MovilToon</h2>
+            <p class="slogan-footer">La tienda definitiva de tecnología móvil en Lima Norte.</p>
+            <img src="recursos/Captura de pantalla 2026-09-05 153316.png" alt="Logotipo de MovilToon" width="200">
+            </div>
+            
+            <div class="column">
+                 <p>SERVICIO AL CLIENTE</p>
+                <ul>
+                    <li><a href="seguridad.html">Políticas de seguridad y privacidad de datos</a></li>
+                    <li><a href="garantia.html">Política de garantía</a></li>
+                    <li><a href="terminos.html">Términos y condiciones</a></li>
+                    <li><a href="reclamaciones.html">Libro de reclamaciones</a></li>
+                    <li><a href="index.html">Volver al Inicio</a></li>
+                </ul>
+            </div>
+            
+            <div class="column">
+            <p>CONTÁCTANOS</p>
+            <ul>
+                <li><strong>Dirección:</strong><br>Av. Garcilaso de la Vega,Lima Norte.</li>
+                <li><strong>Horario de atención:</strong><br>Lunes a sábados: 11:30 am a 8 pm.</li>
+                <li><strong>Atención Ventas:</strong><br>+51 00000000002</li>
+                <li><strong>Correo de contacto:</strong><br>ventas@moviltoon.com</li>
+            </ul>
+            </div>
+        </footer>
+    </body>
+</html>
